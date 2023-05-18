@@ -1,0 +1,20 @@
+#include<stdio.h>
+void number(int a)
+{
+    if(a)
+    {
+        number(a-1);
+    }
+    else
+    {
+        return;
+    }
+
+  printf("%d ",a);
+}
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    number(n);
+}
